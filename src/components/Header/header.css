@@ -1,4 +1,51 @@
 
-/* ray test touch < */
+.header {
+  max-width: 1700px;
+  margin: 0 auto;
+  padding: 38px 71px 0 71px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-/* ray test touch > */
+.bottom-part {
+  transition: opacity 200ms 600ms ease-out;
+}
+
+.bottom-left {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.bottom-right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header-nav {
+  font-family: "futura-pt";
+  font-weight: 700;
+  letter-spacing: .34em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  line-height: 1em;
+  padding: 3px 10px;
+}
+
+.header-nav-item {
+  color: #fefbf0;
+  margin: 0 1.14em;
+  padding: .618em 0;
+  transition: color 170ms ease-in-out, background-color 170ms ease-in-out;
+}
+
+.header-branding {
+  display: flex;
+  padding: 3px 10px;
+}
+
+.header-branding-logo {
+  max-width: 180px;
+}
