@@ -6,10 +6,6 @@
   align-items: center;
 }
 
-.bottom-part {
-  transition: opacity 200ms 600ms ease-out;
-}
-
 .bottom-left {
   flex: 1;
   display: flex;
@@ -25,6 +21,7 @@
 .header-nav {
   font-family: "futura-pt";
   font-weight: 700;
+  font-size: 13px;
   letter-spacing: .34em;
   text-transform: uppercase;
   line-height: 1em;
@@ -35,7 +32,6 @@
   color: #fefbf0;
   margin: 0 1.14em;
   padding: .618em 0;
-  transition: color 170ms ease-in-out, background-color 170ms ease-in-out;
 }
 
 .header-branding {
@@ -44,5 +40,5 @@
 }
 
 .header-branding-logo {
-  max-width: 180px;
+  max-width: 142px;
 }
