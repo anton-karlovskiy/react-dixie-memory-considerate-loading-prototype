@@ -1,7 +1,5 @@
 
 .header {
-  max-width: 1700px;
-  margin: 0 auto;
   padding: 38px 71px 0 71px;
   display: flex;
   justify-content: center;
@@ -29,7 +27,6 @@
   font-weight: 700;
   letter-spacing: .34em;
   text-transform: uppercase;
-  white-space: nowrap;
   line-height: 1em;
   padding: 3px 10px;
 }

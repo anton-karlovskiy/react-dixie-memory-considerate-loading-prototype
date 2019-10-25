@@ -5,6 +5,9 @@ body {
   font-size: 16px;
   letter-spacing: .02em;
   line-height: 1.4em;
+  background-image: url('./assets/images/background.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
   color: rgba(78,59,44,.65);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
