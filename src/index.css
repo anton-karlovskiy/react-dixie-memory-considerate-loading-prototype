@@ -4,12 +4,17 @@
   src: local('FuturaPTBold'), url(./assets/fonts/FuturaPTBold.otf) format('truetype');
 }
 
+@font-face {
+  font-family: 'Roboto-Regular';
+  src: local('Roboto-Regular'), url(./assets/fonts/Roboto-Regular.ttf) format('truetype');
+}
+
 body {
   margin: 0;
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 300;
   font-size: 16px;
-  letter-spacing: .02em;
+  letter-spacing: .15em;
   line-height: 1.4em;
   background-image: url('./assets/images/background.webp');
   background-repeat: no-repeat;

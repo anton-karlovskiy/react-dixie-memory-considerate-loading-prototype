@@ -3,6 +3,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import './assets/fonts/FuturaPTBold.otf';
+import './assets/fonts/Roboto-Regular.ttf';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
