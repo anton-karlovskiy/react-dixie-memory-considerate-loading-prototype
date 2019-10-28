@@ -4,11 +4,6 @@
   src: local('FuturaPTBold'), url(./assets/fonts/FuturaPTBold.otf) format('truetype');
 }
 
-@font-face {
-  font-family: 'Roboto-Regular';
-  src: local('Roboto-Regular'), url(./assets/fonts/Roboto-Regular.ttf) format('truetype');
-}
-
 body {
   margin: 0;
   font-family: "Source Sans Pro", sans-serif;
