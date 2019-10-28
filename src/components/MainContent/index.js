@@ -1,11 +1,13 @@
 
-import React from 'react';
+import React, { Suspense, lazy } from 'react';
 
-import ThreeBox from './ThreeBox';
-import TwoBox from './TwoBox';
+import LazyLoadingErrorBoundary from '../LazyLoadingErrorBoundary';
 import { useMemoryStatus } from '../../utils/hooks';
 import { DEVICE_MEMORY_LIMIT } from '../../config';
 import './main-content.css';
+
+const LazyThreeBox = lazy(() => import(/* webpackChunkName: "heavy-three-box" */ './ThreeBox'));
+const LazyTwoBox = lazy(() => import(/* webpackChunkName: "light-two-box" */ './TwoBox'));
 
 const MainContent = () => {
   const { deviceMemory, unsupported } = useMemoryStatus();
@@ -14,11 +16,15 @@ const MainContent = () => {
 
   return (
     <div className='main-content'>
-      { deviceMemory < DEVICE_MEMORY_LIMIT ? (
-        <TwoBox />
-      ) : (
-        <ThreeBox />
-      ) }
+      <LazyLoadingErrorBoundary>
+        <Suspense fallback={<>Loading</>}>
+          { deviceMemory < DEVICE_MEMORY_LIMIT ? (
+            <LazyTwoBox />
+          ) : (
+            <LazyThreeBox />
+          ) }
+        </Suspense>
+      </LazyLoadingErrorBoundary>
     </div>
   );
 };
