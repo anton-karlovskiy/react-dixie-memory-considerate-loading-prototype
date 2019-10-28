@@ -3,11 +3,13 @@ import React from 'react';
 
 import './header.css';
 import logo from '../../assets/images/logo.webp';
+import hamburger from '../../assets/icons/hamburger.svg';
 
 const Header = () => {
   return (
     <div className='header'>
       <div className='bottom-left'>
+        <button className='menu-button'><img src={hamburger} width='24' height='18' alt='hamburger menu' /></button>
         <nav className='header-nav'>
           <a href='/' className='header-nav-item'>Home</a>
           <a href='https://dixiemech.store/' className='header-nav-item'>Shop</a>
