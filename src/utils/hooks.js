@@ -14,7 +14,6 @@
  * limitations under the License.
  */
 
-// ray test touch <
 import { useState } from 'react';
 
 const isClientSideRendering = typeof window === 'undefined';
@@ -46,4 +45,3 @@ const useMemoryStatus = () => {
 };
 
 export { useMemoryStatus };
-// ray test touch >

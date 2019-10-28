@@ -1,3 +1,6 @@
 
-/* ray test touch < */
-/* ray test touch > */
+.two-box {
+  display: flex;
+  align-items: center;
+  height: 800px;
+}

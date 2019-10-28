@@ -14,10 +14,8 @@
  * limitations under the License.
  */
 
-// ray test touch <
 const DEVICE_MEMORY_LIMIT = 4; // Threshold is 4GB RAM
 
 export {
   DEVICE_MEMORY_LIMIT
 };
-// ray test touch >
