@@ -14,10 +14,9 @@
  * limitations under the License.
  */
 
-.App {
-  text-align: center;
-  max-width: 1700px;
-  margin: 0 auto;
-  min-height: 100vh;
+.checkbox {
+  margin-left: 20px;
+  padding: 8px;
+  border: 1px solid #1890ff;
+  border-radius: 20px;
 }
-

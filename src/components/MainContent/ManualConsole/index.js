@@ -15,11 +15,24 @@
  */
 
 import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
 
-it('renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<App />, div);
-  ReactDOM.unmountComponentAtNode(div);
-});
+import SwitchWithLabel from '../../SwitchWithLabel';
+import CheckboxWithLabel from '../../CheckboxWithLabel';
+
+import './manual-console.css';
+
+const ManualConsole = ({ manualEnabled, isThreeBoxOn, enableManualTesting, toggleThreeBox }) => (
+  <div className='manual-console'>
+    <SwitchWithLabel 
+      label='<model-viewer> On/Off'
+      disabled={!manualEnabled}
+      checked={isThreeBoxOn}
+      onChange={toggleThreeBox} />
+    <CheckboxWithLabel
+      label='Enable Manual Testing'
+      checked={manualEnabled}
+      onChange={enableManualTesting} />
+  </div>
+);
+
+export default ManualConsole;
